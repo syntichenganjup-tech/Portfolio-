@@ -17,7 +17,6 @@
 }
 
 body{
-  /* BLEU CIEL BRILLANT */
   background: linear-gradient(135deg, #38bdf8, #0ea5e9, #60a5fa);
   color:#fff;
 }
@@ -28,24 +27,43 @@ body{
   top:0;
   width:100%;
   display:flex;
-  justify-content:space-between;
+  align-items:center;
   padding:20px 50px;
   background:rgba(0,0,0,0.25);
   backdrop-filter:blur(10px);
   z-index:1000;
 }
 
+.logo{
+  font-weight:600;
+  flex:1;
+}
+
+/* NAVIGATION CENTRÉE */
 .nav-links{
   display:flex;
-  gap:20px;
+  gap:25px;
   list-style:none;
+  justify-content:center;
+  flex:2;
+}
+
+.nav-links li{
+  display:inline-block;
 }
 
 .nav-links a{
   color:white;
   text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
 }
 
+.nav-links a:hover{
+  color:#000;
+}
+
+/* HERO */
 .hero{
   height:100vh;
   display:flex;
@@ -81,6 +99,7 @@ body{
   border:1px solid #000;
 }
 
+/* SECTIONS */
 .section{
   padding:80px 20px;
   text-align:center;
@@ -95,6 +114,7 @@ body{
   border-radius:10px;
 }
 
+/* SKILLS */
 .skills-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -107,6 +127,7 @@ body{
   border-radius:10px;
 }
 
+/* PROJECTS */
 .projects-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -124,6 +145,7 @@ body{
   border-radius:10px;
 }
 
+/* CONTACT */
 .contact-box{
   display:flex;
   justify-content:space-around;
@@ -194,7 +216,6 @@ footer{
   <h2>À Propos</h2>
 
   <div class="about-box">
-
     <p>
       Je suis Syntiche Signoé, passionnée par la technologie et le développement numérique.
     </p>
@@ -208,7 +229,6 @@ footer{
       J’ai aussi des compétences en design UI/UX, HTML, CSS et JavaScript pour créer
       des interfaces modernes, simples et efficaces.
     </p>
-
   </div>
 </section>
 
@@ -227,11 +247,25 @@ footer{
   <h2>Projets</h2>
 
   <div class="projects-grid">
+
     <div class="project">
       <img src="https://source.unsplash.com/400x250/?website" />
       <h3>Site Web</h3>
       <p>Projet moderne et responsive.</p>
     </div>
+
+    <div class="project">
+      <img src="https://source.unsplash.com/400x250/?app" />
+      <h3>Application Mobile</h3>
+      <p>UI moderne et intuitive.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://source.unsplash.com/400x250/?design" />
+      <h3>UI Design</h3>
+      <p>Maquettes et prototypes UX.</p>
+    </div>
+
   </div>
 </section>
 
@@ -261,4 +295,4 @@ footer{
 </footer>
 
 </body>
-                </html>
+</html>
